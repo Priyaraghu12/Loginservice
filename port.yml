@@ -1,0 +1,9 @@
+# enrichService.yml
+
+- identifier: "Loginservice"
+  blueprint: service
+  properties:
+    type: "frontend"
+    lifecycle: "Experimental"
+  relations:
+    domain: "[{"identifier":"payment","title":"Payment","icon":null,"blueprint":"domain","team":[],"properties":{"architecture":"https://lucid.app/documents/embedded/c3d64493-a5fe-4b18-98d5-66d355080de3"},"relations":{},"createdAt":"2024-06-26T19:10:25.005Z","createdBy":"ds1E7kR869pSXBoZlQMiBW6uhA7CpBN5","updatedAt":"2024-06-26T19:10:25.005Z","updatedBy":"ds1E7kR869pSXBoZlQMiBW6uhA7CpBN5"}]"
