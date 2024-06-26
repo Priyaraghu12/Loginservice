@@ -3,7 +3,7 @@
 - identifier: "Loginservice"
   blueprint: service
   properties:
-    type: "backend"
-    lifecycle: "Experimental"
+    type: "frontend"
+    lifecycle: "Deprecated"
   relations:
-    domain: "[{"identifier":"shipping","title":"Shipping","icon":null,"blueprint":"domain","team":[],"properties":{"architecture":"https://lucid.app/documents/embedded/c3d64493-a5fe-4b18-98d5-66d355080de3"},"relations":{},"createdAt":"2024-06-26T20:40:10.851Z","createdBy":"ds1E7kR869pSXBoZlQMiBW6uhA7CpBN5","updatedAt":"2024-06-26T20:40:10.851Z","updatedBy":"ds1E7kR869pSXBoZlQMiBW6uhA7CpBN5"}]"
+    domain: "payment"
