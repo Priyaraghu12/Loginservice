@@ -9,10 +9,17 @@ on:
         required: true
         description: The name of the new service
         type: string
+    secrets:
+      ORG_ADMIN_TOKEN:
+        required: true
+      PORT_CLIENT_ID:
+        required: true
+      PORT_CLIENT_SECRET:
+        required: true
 jobs:
   scaffold-service:
     env:
-      ORG_NAME: Priyaraghu12
+      ORG_NAME: "Priyaraghu12"
     runs-on: ubuntu-latest
     steps:
       - uses: port-labs/cookiecutter-gha@v1.1.1
