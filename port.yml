@@ -1,7 +1,0 @@
-- identifier: "Loginservice"
-  blueprint: service
-  properties:
-    type: "frontend"
-    lifecycle: "Deprecated"
-  relations:
-    domain: "payment"
