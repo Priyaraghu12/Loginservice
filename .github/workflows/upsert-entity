@@ -1,0 +1,27 @@
+name: Create Entity in Port
+on:
+  workflow_dispatch:
+    inputs:
+      entity_name:
+        required: true
+        type: string
+        description: The name of the entity to create
+
+jobs:
+  create-entity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: port-labs/port-github-action@v1
+        with:
+          clientId: ${{ secrets.PORT_CLIENT_ID }}
+          clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
+          baseUrl: https://api.getport.io
+          operation: UPSERT
+          identifier: ${{ github.event.inputs.entity_name }}
+          blueprint: service
+          properties: |-
+            {
+              "myStringProp": "My value",
+              "myNumberProp": 1,
+              "myBooleanProp": true
+            }
