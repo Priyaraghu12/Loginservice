@@ -1,0 +1,9 @@
+- identifier: amwins-ascs-amlink-client12
+  title: ASCS Amlink Client API
+  blueprint: repo
+  icon: CSharp
+  properties:
+    company: Amwins
+  relations:
+    service: Amwins/ascs3
+    repo: amwins-ascs-amlink-client-manual
